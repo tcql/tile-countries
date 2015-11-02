@@ -1,5 +1,5 @@
 {
-  "name": "split-countries",
+  "name": "tile-countries",
   "version": "1.0.0",
   "description": "",
   "main": "split-countries.js",
@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "geojson-xyz": "^1.2.0",
     "minimist": "^1.2.0",
     "tile-cover": "^3.0.1",
     "tilebelt": "^1.0.1",
-    "turf-bbox-polygon": "^1.0.1",
-    "turf-merge": "^1.0.2"
+    "turf-bbox-polygon": "^1.0.1"
   }
 }
