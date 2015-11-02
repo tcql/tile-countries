@@ -33,11 +33,11 @@ xyz('ne_50m_admin_0_countries.geojson', function (err, result) {
     var tiles = tilecover.tiles(poly, {min_zoom: argv.basezoom, max_zoom: argv.detailzoom});
 
     if (argv.output === 'bbox') {
-      tiles = tiles.map(function (tile) { return tilebelt.tileToBBOX(tile) });
+      tiles = tiles.map(function (tile) { return tilebelt.tileToBBOX(tile); });
     }
 
     tiles.forEach(function (tile) {
-      console.log(tile);
+      console.log(JSON.stringify(tile));
     });
   }
 });
